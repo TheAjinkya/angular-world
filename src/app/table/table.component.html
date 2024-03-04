@@ -1,0 +1,20 @@
+<ag-grid-angular
+  class="ag-theme-quartz"
+  style="width: auto; height: 500px"
+  (cellClicked)="onCellClicked($event)"
+  (cellValueChanged)="onCellValueChanged($event)"
+  (cellFocused)="onCellFocused($event)"
+  [rowData]="rowData"
+  [defaultColDef]="defaultColDef"
+  [columnDefs]="colDefs"
+>
+</ag-grid-angular>
+
+<hr />
+<button
+  mat-raised-button
+  matTooltip="Info about the action"
+  aria-label="Button that displays a tooltip when focused or hovered over"
+>
+  Action
+</button>
