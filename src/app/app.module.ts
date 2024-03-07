@@ -18,6 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { TodoFormComponent } from './todo-form/todo-form.component';
 import { FormlyFieldInputComponent } from './formly/formly-field-input/formly-field-input.component';
+import { ReactiveFormComponent } from './form-wizard/reactive-form/reactive-form.component';
+import { TemplateFormComponent } from './form-wizard/template-form/template-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FormlyFieldInputComponent } from './formly/formly-field-input/formly-fi
     DashboardComponent,
     NavbarComponent,
     TodoFormComponent,
-    FormlyFieldInputComponent
+    FormlyFieldInputComponent,
+    ReactiveFormComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
