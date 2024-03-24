@@ -9,19 +9,32 @@ import { InfoHeaderComponent } from './info-header/info-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from '@angular/material/button';
+import { FormlyModule } from '@ngx-formly/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { FormsComponent } from './forms/forms.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FormlyMaterialModule } from '@ngx-formly/material';
+import { TodoFormComponent } from './todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    InfoHeaderComponent
+    InfoHeaderComponent,
+    FormsComponent,
+    DashboardComponent,
+    NavbarComponent,
+    TodoFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgGridAngular,
     BrowserAnimationsModule,
-    MatButtonModule, MatTooltipModule
+    FormlyMaterialModule,
+    MatButtonModule, MatTooltipModule, FormlyModule.forRoot(), ReactiveFormsModule, FormlyBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

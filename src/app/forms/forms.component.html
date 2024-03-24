@@ -1,0 +1,5 @@
+<Form [formGroup]="loginForm" (ngSubmit)="onSubmit(model)">
+    <formly-form [form]="loginForm" [fields]="fields" [model]="model"></formly-form>
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-success" type="button">Set Form Values</button>
+</Form>

@@ -4,7 +4,15 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine"
+      "jest",
+      "node"
+    ],
+    "module": "CommonJs",
+    "esModuleInterop": true, // 2
+    "emitDecoratorMetadata": true, // 3
+    "files": [
+      "src/setup.jest.ts",
+      "src/polyfills.ts",
     ]
   },
   "include": [

@@ -1,0 +1,4 @@
+<form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+    <formly-form [form]="todoForm" [fields]="fields" [model]="model" [options]="options"></formly-form>
+<button type="submit" class="btn btn-success"> Submit</button>
+</form>
