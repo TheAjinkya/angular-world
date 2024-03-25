@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import { FormlyFieldInputComponent } from './formly/formly-field-input/formly-field-input.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
     FormsComponent,
     DashboardComponent,
     NavbarComponent,
-    TodoFormComponent
+    TodoFormComponent,
+    FormlyFieldInputComponent
   ],
   imports: [
     BrowserModule,

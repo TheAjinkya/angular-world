@@ -13,12 +13,20 @@ export class TodoFormComponent {
   model: any = { tasks: [null] };
   fields: FormlyFieldConfig[] = [
     {
-      key: 'taskName',
-      type: 'input',
+      key: 'tasks',
+      type: 'repeat',
       props: {
-        label: 'Task Name',
+        addText: 'Add Task',
+        label: 'TODO LIST',
       },
-    },
+      fieldArray: {
+        type: 'input',
+        props: {
+          placeholder: 'Task name',
+          required: true,
+        },
+      }
+    }
   ];
 
   onSubmit() {
