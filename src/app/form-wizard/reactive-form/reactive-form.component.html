@@ -1,1 +1,11 @@
-<p>reactive-form works!</p>
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <label>First Name</label>
+    <input type="text" formControlName="firstName" />
+    <label>Last Name</label>
+    <input type="text" formControlName="lastName" />
+    <label>Contact</label>
+    <input type="text" formControlName="contact" />
+    <label>Email</label>
+    <input type="text" formControlName="email" />
+    <button type="submit" [disabled]="registrationForm.valid">Submit Profile</button>
+</form>
