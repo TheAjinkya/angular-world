@@ -20,6 +20,11 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
 import { FormlyFieldInputComponent } from './formly/formly-field-input/formly-field-input.component';
 import { ReactiveFormComponent } from './form-wizard/reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './form-wizard/template-form/template-form.component';
+import { WeatherAppComponent } from './projects/weather-app/weather-app.component';
+import { MoviesAppComponent } from './projects/movies-app/movies-app.component';
+import { ExpenseAppComponent } from './projects/expense-app/expense-app.component';
+import { TicTacToeAppComponent } from './projects/tic-tac-toe-app/tic-tac-toe-app.component';
+import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { TemplateFormComponent } from './form-wizard/template-form/template-form
     TodoFormComponent,
     FormlyFieldInputComponent,
     ReactiveFormComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    WeatherAppComponent,
+    MoviesAppComponent,
+    ExpenseAppComponent,
+    TicTacToeAppComponent,
+    StopWatchAppComponent
   ],
   imports: [
     BrowserModule,
