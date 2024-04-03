@@ -25,6 +25,7 @@ import { MoviesAppComponent } from './projects/movies-app/movies-app.component';
 import { ExpenseAppComponent } from './projects/expense-app/expense-app.component';
 import { TicTacToeAppComponent } from './projects/tic-tac-toe-app/tic-tac-toe-app.component';
 import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.
     AgGridAngular,
     BrowserAnimationsModule,
     FormlyMaterialModule,
+    HttpClientModule,
     MatButtonModule, MatTooltipModule, FormlyModule.forRoot(), ReactiveFormsModule, FormlyBootstrapModule
   ],
   providers: [],

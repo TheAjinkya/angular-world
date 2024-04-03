@@ -35,6 +35,14 @@ export class FormsComponent {
       },
     },
     {
+      key: 'contact',
+      type: 'input',
+      props: {
+        label: 'Last Name',
+        required: true,
+      },
+    },
+    {
       key: 'email',
       type: 'input',
       props: {
