@@ -27,6 +27,7 @@ import { TicTacToeAppComponent } from './projects/tic-tac-toe-app/tic-tac-toe-ap
 import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { TodolistComponent } from './projects/todolist/todolist.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     ExpenseAppComponent,
     TicTacToeAppComponent,
     StopWatchAppComponent,
-    GalleryComponent
+    GalleryComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
