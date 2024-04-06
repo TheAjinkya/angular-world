@@ -19,6 +19,7 @@ export class WeatherAppComponent {
   country: string | undefined;
   sunrise: any | undefined;
   sunset: any | undefined;
+  timeZone: any;
 
   constructor(private weatherService: WeatherService) {}
 
@@ -53,6 +54,7 @@ export class WeatherAppComponent {
     this.country = allWeather.sys.country
     this.sunrise = new Date(allWeather.sys.sunrise*1000);
     this.sunset = new Date(allWeather.sys.sunset*1000);
+    this.timeZone =  new Date((allWeather.dt+allWeather.timezone)*1000);
     
 
     console.log(this.localTime);

@@ -28,6 +28,7 @@ import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { TodolistComponent } from './projects/todolist/todolist.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TodolistComponent } from './projects/todolist/todolist.component';
     TicTacToeAppComponent,
     StopWatchAppComponent,
     GalleryComponent,
-    TodolistComponent
+    TodolistComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
