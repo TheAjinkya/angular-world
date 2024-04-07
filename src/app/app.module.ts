@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { TodolistComponent } from './projects/todolist/todolist.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { GithubUsersAppComponent } from './github-users-app/github-users-app.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     StopWatchAppComponent,
     GalleryComponent,
     TodolistComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    GithubUsersAppComponent
   ],
   imports: [
     BrowserModule,
