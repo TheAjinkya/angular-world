@@ -30,6 +30,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { TodolistComponent } from './projects/todolist/todolist.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { GithubUsersAppComponent } from './github-users-app/github-users-app.component';
+import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { GithubUsersAppComponent } from './github-users-app/github-users-app.com
     GalleryComponent,
     TodolistComponent,
     CalculatorComponent,
-    GithubUsersAppComponent
+    GithubUsersAppComponent,
+    NewsFeedAppComponent
   ],
   imports: [
     BrowserModule,
