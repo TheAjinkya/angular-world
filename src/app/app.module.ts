@@ -31,6 +31,7 @@ import { TodolistComponent } from './projects/todolist/todolist.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { GithubUsersAppComponent } from './github-users-app/github-users-app.component';
 import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
+import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
     TodolistComponent,
     CalculatorComponent,
     GithubUsersAppComponent,
-    NewsFeedAppComponent
+    NewsFeedAppComponent,
+    QuizAppComponent
   ],
   imports: [
     BrowserModule,
