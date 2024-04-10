@@ -32,6 +32,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { GithubUsersAppComponent } from './github-users-app/github-users-app.component';
 import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
+import { JobsAppComponent } from './projects/jobs-app/jobs-app.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
     CalculatorComponent,
     GithubUsersAppComponent,
     NewsFeedAppComponent,
-    QuizAppComponent
+    QuizAppComponent,
+    JobsAppComponent
   ],
   imports: [
     BrowserModule,
