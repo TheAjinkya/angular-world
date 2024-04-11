@@ -33,6 +33,7 @@ import { GithubUsersAppComponent } from './github-users-app/github-users-app.com
 import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
 import { JobsAppComponent } from './projects/jobs-app/jobs-app.component';
+import { PexelAppComponent } from './pexel-app/pexel-app.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { JobsAppComponent } from './projects/jobs-app/jobs-app.component';
     GithubUsersAppComponent,
     NewsFeedAppComponent,
     QuizAppComponent,
-    JobsAppComponent
+    JobsAppComponent,
+    PexelAppComponent
   ],
   imports: [
     BrowserModule,
