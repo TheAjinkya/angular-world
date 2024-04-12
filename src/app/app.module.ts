@@ -34,6 +34,7 @@ import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
 import { JobsAppComponent } from './projects/jobs-app/jobs-app.component';
 import { PexelAppComponent } from './pexel-app/pexel-app.component';
+import { SpotifyAppComponent } from './spotify-app/spotify-app.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { PexelAppComponent } from './pexel-app/pexel-app.component';
     NewsFeedAppComponent,
     QuizAppComponent,
     JobsAppComponent,
-    PexelAppComponent
+    PexelAppComponent,
+    SpotifyAppComponent
   ],
   imports: [
     BrowserModule,
