@@ -8,6 +8,7 @@ import { MoviesAppComponent } from './projects/movies-app/movies-app.component';
 import { TicTacToeAppComponent } from './projects/tic-tac-toe-app/tic-tac-toe-app.component';
 import { ExpenseAppComponent } from './projects/expense-app/expense-app.component';
 import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.component';
+import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 
 const routes: Routes = [{path:'dashboard', component: DashboardComponent},
 {path:'todo', component: TodoFormComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [{path:'dashboard', component: DashboardComponent},
 {path:'expenseapp', component: ExpenseAppComponent},
 {path:'stopwatch', component: StopWatchAppComponent},
 {path:'registration', component: ReactiveFormComponent},
+{path:'newsapp', component: NewsFeedAppComponent},
 {path:'**', redirectTo:'weatherapp'}];
 
 @NgModule({
