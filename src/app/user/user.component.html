@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label class="col-md-4">User Name</label>
+                <input type="text" class="form-control" #userName />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">User ID</label>
+                <input type="text" class="form-control" #userId />
+            </div>
+            <div class="form-group">
+                <button (click)="addUser(userName.value, userId.value)" class="btn btn-primary" type="button">
+                    Add User
+                </button>
+            </div>
+        </form>
+    </div>
+</div><br />
+<table class="table table-hover" border="1">
+    <thead>
+        <tr>
+            <td>S.No.</td>
+            <td>User Name</td>
+            <td>User Id</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users$ | async; let i =index;">
+            <td>{{i+1}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.userId}}</td>
+        </tr>
+        <tr *ngIf="( users$ | async)?.length == 0"> No Record </tr>
+    </tbody>
+</table>

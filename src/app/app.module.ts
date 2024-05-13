@@ -36,6 +36,9 @@ import { JobsAppComponent } from './projects/jobs-app/jobs-app.component';
 import { PexelAppComponent } from './pexel-app/pexel-app.component';
 import { SpotifyAppComponent } from './spotify-app/spotify-app.component';
 import { YoutubeAppComponent } from './youtube-app/youtube-app.component';
+import { UserComponent } from './user/user.component';
+import { StoreModule } from '@ngrx/store';
+import { addReducer } from './Reducer/Product.reducer';
 
 @NgModule({
   declarations: [
@@ -63,7 +66,8 @@ import { YoutubeAppComponent } from './youtube-app/youtube-app.component';
     JobsAppComponent,
     PexelAppComponent,
     SpotifyAppComponent,
-    YoutubeAppComponent
+    YoutubeAppComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +76,7 @@ import { YoutubeAppComponent } from './youtube-app/youtube-app.component';
     BrowserAnimationsModule,
     FormlyMaterialModule,
     HttpClientModule,
+    StoreModule.forRoot({user: addReducer}),
     MatButtonModule, MatTooltipModule, FormlyModule.forRoot(), ReactiveFormsModule, FormlyBootstrapModule
   ],
   providers: [],
