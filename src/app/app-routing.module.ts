@@ -10,6 +10,7 @@ import { ExpenseAppComponent } from './projects/expense-app/expense-app.componen
 import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.component';
 import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 import { UserComponent } from './user/user.component';
+import { CounterComponent } from './counter/counter.component';
 
 const routes: Routes = [{path:'dashboard', component: DashboardComponent},
 {path:'todo', component: TodoFormComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [{path:'dashboard', component: DashboardComponent},
 {path:'stopwatch', component: StopWatchAppComponent},
 {path:'registration', component: ReactiveFormComponent},
 { path: 'newsapp', component: NewsFeedAppComponent },
-{path:'users', component: UserComponent},
+  { path: 'users', component: UserComponent },
+{path:'counter', component: CounterComponent},
 {path:'**', redirectTo:'weatherapp'}];
 
 @NgModule({

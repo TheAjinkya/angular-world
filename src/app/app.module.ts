@@ -7,8 +7,8 @@ import { TableComponent } from './table/table.component';
 import { AgGridAngular } from 'ag-grid-angular';
 import { InfoHeaderComponent } from './info-header/info-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatButtonModule} from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatButtonModule } from '@angular/material/button';
 import { FormlyModule } from '@ngx-formly/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
@@ -39,6 +39,9 @@ import { YoutubeAppComponent } from './youtube-app/youtube-app.component';
 import { UserComponent } from './user/user.component';
 import { StoreModule } from '@ngrx/store';
 import { addReducer } from './Reducer/Product.reducer';
+import { CounterComponent } from './counter/counter.component';
+import { countReducer } from './counter/counter.reducer';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +70,9 @@ import { addReducer } from './Reducer/Product.reducer';
     PexelAppComponent,
     SpotifyAppComponent,
     YoutubeAppComponent,
-    UserComponent
+    UserComponent,
+    CounterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,7 @@ import { addReducer } from './Reducer/Product.reducer';
     BrowserAnimationsModule,
     FormlyMaterialModule,
     HttpClientModule,
-    StoreModule.forRoot({user: addReducer}),
+    StoreModule.forRoot({ count: countReducer }),
     MatButtonModule, MatTooltipModule, FormlyModule.forRoot(), ReactiveFormsModule, FormlyBootstrapModule
   ],
   providers: [],
