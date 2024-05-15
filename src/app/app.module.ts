@@ -42,6 +42,8 @@ import { addReducer } from './Reducer/Product.reducer';
 import { CounterComponent } from './counter/counter.component';
 import { countReducer } from './counter/counter.reducer';
 import { FooterComponent } from './footer/footer.component';
+import { MoviesComponent } from './movies/movies.component';
+import { movieReducer } from './movies/movies.reducer';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,8 @@ import { FooterComponent } from './footer/footer.component';
     YoutubeAppComponent,
     UserComponent,
     CounterComponent,
-    FooterComponent
+    FooterComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +84,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     FormlyMaterialModule,
     HttpClientModule,
-    StoreModule.forRoot({ count: countReducer }),
+    StoreModule.forRoot({ movies: movieReducer }),
     MatButtonModule, MatTooltipModule, FormlyModule.forRoot(), ReactiveFormsModule, FormlyBootstrapModule
   ],
   providers: [],

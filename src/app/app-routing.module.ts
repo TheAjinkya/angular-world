@@ -11,19 +11,21 @@ import { StopWatchAppComponent } from './projects/stop-watch-app/stop-watch-app.
 import { NewsFeedAppComponent } from './news-feed-app/news-feed-app.component';
 import { UserComponent } from './user/user.component';
 import { CounterComponent } from './counter/counter.component';
+import { MoviesComponent } from './movies/movies.component';
 
-const routes: Routes = [{path:'dashboard', component: DashboardComponent},
-{path:'todo', component: TodoFormComponent},
-{path:'weatherapp', component: WeatherAppComponent},
-{path:'moviesapp', component: MoviesAppComponent},
-{path:'tictactoe', component: TicTacToeAppComponent},
-{path:'expenseapp', component: ExpenseAppComponent},
-{path:'stopwatch', component: StopWatchAppComponent},
-{path:'registration', component: ReactiveFormComponent},
+const routes: Routes = [{ path: 'dashboard', component: DashboardComponent },
+{ path: 'todo', component: TodoFormComponent },
+{ path: 'weatherapp', component: WeatherAppComponent },
+{ path: 'moviesapp', component: MoviesAppComponent },
+{ path: 'tictactoe', component: TicTacToeAppComponent },
+{ path: 'expenseapp', component: ExpenseAppComponent },
+{ path: 'stopwatch', component: StopWatchAppComponent },
+{ path: 'registration', component: ReactiveFormComponent },
 { path: 'newsapp', component: NewsFeedAppComponent },
-  { path: 'users', component: UserComponent },
-{path:'counter', component: CounterComponent},
-{path:'**', redirectTo:'weatherapp'}];
+{ path: 'users', component: UserComponent },
+{ path: 'counter', component: CounterComponent },
+{ path: 'movies', component: MoviesComponent },
+{ path: '**', redirectTo: 'weatherapp' }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
