@@ -44,6 +44,7 @@ import { countReducer } from './counter/counter.reducer';
 import { FooterComponent } from './footer/footer.component';
 import { MoviesComponent } from './movies/movies.component';
 import { movieReducer } from './movies/movies.reducer';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { movieReducer } from './movies/movies.reducer';
     UserComponent,
     CounterComponent,
     FooterComponent,
-    MoviesComponent
+    MoviesComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
